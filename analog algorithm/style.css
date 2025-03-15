@@ -194,3 +194,17 @@
 	color: green;
   }
   
+  .zurück {
+	background-color: lightgreen;
+	border: 2px solid black;
+	padding: 20px;
+	margin: 20px 0 30px;
+	font-size: 18px;
+	border-radius: 8px;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+	  "DejaVu Sans Mono", monospace;
+	font-weight: 600;
+	margin-bottom: 100px;
+	margin-top: 40px;
+
+}
