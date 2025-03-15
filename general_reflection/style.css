@@ -184,9 +184,53 @@
 	  width: 90%;
 	}
   }
+  
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  a:hover {
+	color: green;
+  }
+  
+  ul {
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, 
+	  "DejaVu Sans Mono", monospace;
+	font-size: 25px;
+	font-weight: 600;
+	list-style-type: none;
+	margin-top: 60px;
+  }
+  
+  ul li {
+	margin-bottom: 30px;
+  }
+  
+  ul li a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+	color: green;
+  }
+  
 
- 
-.container {
+  .custom-font {
+	text-decoration: none;
+	color: black;
+	margin-top: 120px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 12px;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+	  "DejaVu Sans Mono", monospace;
+  }
+  
+
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center; /* Zentriert beide Boxen */
@@ -206,23 +250,25 @@
 }
 
 .zurück {
-    background-color: lightgreen;
-    border: 2px solid black;
-    padding: 10px 20px;
-    font-size: 16px; 
-    border-radius: 8px;
-    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
-    font-weight: 600;
-    text-align: center;
-    display: inline-block;
-    width: auto; 
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    color: green;
-}
+	background-color: lightgreen;
+	border: 2px solid black;
+	padding: 10px 20px;
+	font-size: 16px; 
+	border-radius: 8px;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	font-weight: 600;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px; 
+	margin-bottom: 40px;
+	width: auto; 
+  }
+  
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  a:hover {
+	color: green;
+  }
