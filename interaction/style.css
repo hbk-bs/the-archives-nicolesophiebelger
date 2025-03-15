@@ -8,21 +8,22 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 100vh;
+	justify-content: flex-start; /* Verhindert Überlagerung durch gleichmäßige Verteilung */
+	min-height: 100vh; /* Falls die Boxen größer werden, bleibt genug Platz */
 	background-color: #f5f5f5;
 	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	padding: 20px; /* Etwas Abstand zum Bildschirmrand */
 }
 
 h2 {
 	margin-bottom: 20px;
-	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 }
 
 #game-board {
 	display: grid;
 	grid-template-columns: repeat(3, 100px);
 	gap: 10px;
+	margin-bottom: 40px; /* Abstand zum nächsten Element */
 }
 
 .cell {
@@ -35,7 +36,6 @@ h2 {
 	font-size: 2rem;
 	cursor: pointer;
 	transition: transform 0.2s;
-	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 }
 
 .cell:hover {
@@ -67,33 +67,65 @@ h2 {
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	border-bottom: 50px solid #8bc34a;
+
 }
 
 .textbox {
 	background-color: lightgreen;
 	border: 2px solid black;
 	padding: 20px;
-	margin: 20px 0 30px;
+	margin: 20px 0;
 	font-size: 18px;
 	border-radius: 8px;
-	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-	  "DejaVu Sans Mono", monospace;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 	font-weight: 600;
-	margin-bottom: 100px;
-	margin-top: 40px;
+	text-align: center;
+	position: relative;
+	width: 80%;
+	max-width: 500px;
+	margin-bottom: 40px;
+	margin-top: 50px;
   }
 
-  .zurück {
+.zurück {
+	background-color: lightgreen;
+	border: 2px solid black;
+	padding: 10px 20px;
+	font-size: 16px; 
+	border-radius: 8px;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	font-weight: 600;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px; 
+	margin-bottom: 40px;
+	width: auto; 
+  }
+  
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  a:hover {
+	color: green;
+  }
+  
+  .reflexion {
 	background-color: lightgreen;
 	border: 2px solid black;
 	padding: 20px;
-	margin: 20px 0 30px;
+	margin: 20px 0;
 	font-size: 18px;
 	border-radius: 8px;
-	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-	  "DejaVu Sans Mono", monospace;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 	font-weight: 600;
-	margin-bottom: 100px;
-	margin-top: 40px;
+	text-align: center;
+	position: relative;
+	width: 80%;
+	max-width: 500px;
+	margin-bottom: 20px;
   }
   
+  
+

@@ -185,26 +185,27 @@
 	}
   }
   
-  a {
-	text-decoration: none;
-	color: inherit;
-  }
-  
-  a:hover {
-	color: green;
-  }
-  
   .zurück {
 	background-color: lightgreen;
 	border: 2px solid black;
-	padding: 20px;
-	margin: 20px 0 30px;
-	font-size: 18px;
+	padding: 10px 20px;
+	font-size: 16px; 
 	border-radius: 8px;
-	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-	  "DejaVu Sans Mono", monospace;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 	font-weight: 600;
-	margin-bottom: 100px;
-	margin-top: 40px;
+	text-align: center;
+	display: inline-block; 
+	margin: 0 auto;
+	width: auto;
+	margin-left: 200px;
+	
+}
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: green;
 }
