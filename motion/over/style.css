@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.small-textbox {
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    margin-top: 15px;
+	margin-left: 22px;
+	margin-bottom: 50px;
+    padding: 10px;
+    background-color: palegreen;
+    border-radius: 6px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;;
+}
+
+a:hover {
+    color: green;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .small-textbox {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .small-textbox {
+        width: 95%;
+    }
+}
+
+.zurück {
+	background-color: lightgreen;
+	border: 2px solid black;
+	padding: 20px;
+	margin: 20px 0 30px;
+	font-size: 18px;
+	border-radius: 8px;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+	  "DejaVu Sans Mono", monospace;
+	font-weight: 600;
+	margin-bottom: 100px;
+	margin-top: 40px;
+  }

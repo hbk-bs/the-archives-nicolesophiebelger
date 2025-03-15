@@ -194,3 +194,26 @@
 	color: green;
   }
   
+  ul {
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, 
+	  "DejaVu Sans Mono", monospace;
+	font-size: 25px;
+	font-weight: 600;
+	list-style-type: none;
+	margin-top: 60px;
+  }
+  
+  ul li {
+	margin-bottom: 30px;
+  }
+  
+  ul li a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+	color: green;
+  }
+  

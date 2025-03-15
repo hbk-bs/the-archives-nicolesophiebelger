@@ -68,3 +68,31 @@ function resetBall() {
   };
 }
 
+let capturer = new CCapture({ format: 'gif', framerate: 30 });
+let started = false;
+
+function startCapture() {
+    capturer.start();
+    started = true;
+}
+
+function captureFrame() {
+    if (started) {
+        capturer.capture(document.body); // Hier kannst du auch ein Canvas-Element wählen
+    }
+}
+
+function stopCapture() {
+    capturer.stop();
+    capturer.save();
+}
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "s") startCapture();
+    if (e.key === "e") stopCapture();
+});
+
+requestAnimationFrame(function loop() {
+    captureFrame();
+    requestAnimationFrame(loop);
+});
