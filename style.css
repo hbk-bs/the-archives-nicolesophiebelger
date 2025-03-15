@@ -217,3 +217,15 @@
 	color: green;
   }
   
+
+  .custom-font {
+	text-decoration: none;
+	color: black;
+	margin-top: 120px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 12px;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+	  "DejaVu Sans Mono", monospace;
+  }
+  
