@@ -234,7 +234,7 @@ a:hover {
     margin-top: 10px;
 }
 
-.arduino code {
+.arduino {
     background-color: lightgreen;
     border: 2px solid black;
     padding: 10px 20px;
