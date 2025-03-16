@@ -188,8 +188,8 @@
   .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Zentriert beide Boxen */
-    gap: 20px; /* Abstand zwischen den Elementen */
+    align-items: center;
+    gap: 20px;
 }
 
 .reflexion {
