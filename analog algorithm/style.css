@@ -185,27 +185,43 @@
 	}
   }
   
-  .zurück {
-	background-color: lightgreen;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.reflexion {
+    background-color: lightgreen;
 	border: 2px solid black;
-	padding: 10px 20px;
-	font-size: 16px; 
+	padding: 20px;
+	margin: 20px 0 30px;
+	font-size: 18px;
 	border-radius: 8px;
-	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+	  "DejaVu Sans Mono", monospace;
 	font-weight: 600;
-	text-align: center;
-	display: inline-block; 
-	margin: 0 auto;
-	width: auto;
-	margin-left: 200px;
-	
+}
+
+.zurück {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px; 
+    border-radius: 8px;
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    width: auto; 
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-	color: green;
+    color: green;
 }
